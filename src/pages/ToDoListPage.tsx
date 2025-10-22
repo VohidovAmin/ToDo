@@ -1,5 +1,4 @@
 import { Form } from "../components/Form/Form"
-import { Header } from "../components/Header/Header"
 import { ToDoList } from "../components/ToDoList/ToDoList"
 import { ToDo } from "../models/todo-item"
 import { useState } from "react"
@@ -39,7 +38,6 @@ export const ToDoListPage = () => {
     return (
         <>
             <ToastContainer position="bottom-right" autoClose={3000} />
-            <Header />
             <Form createNewToDo={createNewToDo} />
             <ToDoList todos={todos} updateToDo={updateToDo} deleteToDo={deleteToDo} />
         </>
