@@ -19,6 +19,7 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 `
 
 export const HeaderLink = styled(NavLink)`
@@ -34,6 +35,41 @@ export const HeaderLink = styled(NavLink)`
         color: #ffd700;
     }
 `
+
+export const HeaderButton = styled.button`
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+        transform: translateY(-50%) scale(0.95);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+`
+
+
 
 
 

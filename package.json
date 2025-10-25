@@ -2,6 +2,7 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://VohidovAmin.github.io/ToDo",
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.2",
     "@testing-library/dom": "^10.4.1",
@@ -21,16 +22,21 @@
     "styled-components": "^6.1.19",
     "styled-normalize": "^8.1.1",
     "typescript": "^4.9.5",
+    "uuid": "^13.0.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.93.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
